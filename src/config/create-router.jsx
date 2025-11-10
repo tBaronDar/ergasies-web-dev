@@ -1,6 +1,6 @@
 import { createBrowserRouter, redirect } from 'react-router-dom';
+import Ex03StartPage from '@/pages/ex-03-start';
 
-import HomePage from '@/home/page';
 import Layout from '@/shared/layout';
 
 export const createRouter = () => {
@@ -10,12 +10,18 @@ export const createRouter = () => {
       element: <Layout />,
       children: [
         {
-          path: '/',
-          element: <HomePage />,
+          index: true,
+          loader() {
+            return redirect('/ex-03-start');
+          },
         },
         {
-          path: '/dashboard',
-          element: <div>Dashboard Page</div>,
+          path: 'ex-03-start',
+          element: <Ex03StartPage />,
+        },
+        {
+          path: 'ex-03b-start',
+          element: <div>ex-03b-start</div>,
         },
       ],
     },
