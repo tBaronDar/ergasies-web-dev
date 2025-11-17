@@ -211,6 +211,8 @@ export default [
           peerDependencies: true,
         },
       ],
+
+      'jsx-a11y/media-has-caption': ['off'],
     },
   },
   {

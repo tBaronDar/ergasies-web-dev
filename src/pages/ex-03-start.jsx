@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom';
 import meme from '@/assets/acdbq9.jpg';
+import audio from '@/assets/audio.mp3';
+import styles from './ex-03-start.module.css';
+
 function Ex03StartPage() {
   return (
-    <div>
+    <div className={styles.ex03StartContainer}>
       <h1>Θάλασσα - Βραχώδης Ακτή</h1>
       <p>
         <strong>Lorem ispum dolor</strong> sit amet, consectetur adipiscing elit.{' '}
@@ -21,6 +24,16 @@ function Ex03StartPage() {
         Μπορείτε να δείτε περισσότερα στην <Link to='/ex-03b-start'>επόμενη σελίδα.</Link>
       </p>
       <img src={meme} alt='Ocean' />
+      <hr />
+      <h2>Συζήτηση:</h2>
+      <ul>
+        <li>Θετικές προοπτικές</li>
+        <li>Ενδεχόμενα προβλήματα</li>
+      </ul>
+      <hr />
+      <audio src={audio} controls />
+      <hr />
+      <h5>Αποτελέσμα κώδικα css</h5>
     </div>
   );
 }
