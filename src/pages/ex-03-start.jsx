@@ -31,9 +31,20 @@ function Ex03StartPage() {
         <li>Ενδεχόμενα προβλήματα</li>
       </ul>
       <hr />
-      <audio src={audio} controls />
+      <audio src={audio} controls preload='auto' loop autoPlay />
       <hr />
-      <h5>Αποτελέσμα κώδικα css</h5>
+      <pre>
+        <b>Αποτελέσμα κώδικα css(auto css den einai):</b>
+        {`
+      protected void Button1_Click(object sender, EventArgs e) 
+      {
+        string st= ws.HelloWorld();
+        Label1.Text = st;
+      }
+      `}
+      </pre>
+      <hr />
+      <h5>ΠΑΜΑΚ - ΕΠΜΣ ΑΕΣΛ</h5>
     </div>
   );
 }
