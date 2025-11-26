@@ -2,6 +2,7 @@ import { createBrowserRouter, redirect } from 'react-router-dom';
 import Ex03StartPage from '@/pages/ex-03-start';
 import LandingPage from '@/pages/landing';
 import Layout from '@/shared/layout';
+import Ex03bStartPage from '@/pages/ex-03b-start';
 
 export const createRouter = () => {
   return createBrowserRouter([
@@ -25,7 +26,7 @@ export const createRouter = () => {
         },
         {
           path: 'ex-03b-start',
-          element: <div>ex-03b-start</div>,
+          element: <Ex03bStartPage />,
         },
       ],
     },
