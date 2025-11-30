@@ -1,0 +1,22 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-y: auto;
+}
+
+#title {
+  background-color: red;
+}
+
+.paragraph {
+  background-color: yellow;
+}
+
+.paragraph span {
+  background-color: black;
+  color: white;
+}
+
+.container > img {
+  margin-top: 1rem;
+}

@@ -1,0 +1,51 @@
+import meme from '@/assets/acdbq9.jpg';
+import audio from '@/assets/audio.mp3';
+import styles from './ask3.module.css';
+
+function Ex03bStartPage() {
+  return (
+    <div className={styles.container}>
+      <h1 id={styles.title}>Θάλασσα - Βραχώδης Ακτή</h1>
+      <p className={styles.paragraph}>
+        <a
+          href='https://www.ionio.gr/index.php?categoryID=149&subcategoryID=218&objectID=6111'
+          target='_blank'
+          rel='noopener noreferrer'>
+          ΕΠΜΣ: Ανάπτυξη Επιχειρησιακών Συστημάτων Λογισμικου
+        </a>{' '}
+        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+        sunt in culpa qui officia deserunt mollit sit amet, consectetur adipiscing elit.{' '}
+        <span>Themis Darelis - Copyright © 2025 ΠαΜακ</span> anim id est laborum. Μπορείτε να δείτε περισσότερα στην{' '}
+        <a href='/ex-03' rel='noopener noreferrer'>
+          επόμενη σελίδα.
+        </a>
+      </p>
+      <img src={meme} alt='Ocean' />
+      <hr />
+      <h2>Συζήτηση:</h2>
+      <ul>
+        <li>Θετικές προοπτικές</li>
+        <li>Ενδεχόμενα προβλήματα</li>
+      </ul>
+      <hr />
+      <audio src={audio} controls preload='auto' loop autoPlay />
+      <hr />
+      <pre>
+        <b>Απόσπασμα κώδικα css(auto css den einai):</b>
+        {`
+      protected void Button1_Click(object sender, EventArgs e) 
+      {
+        string st= ws.HelloWorld();
+        Label1.Text = st;
+      }
+      `}
+      </pre>
+      <hr />
+      <h5>ΠΑΜΑΚ - ΕΠΜΣ ΑΕΣΛ</h5>
+    </div>
+  );
+}
+
+export default Ex03bStartPage;

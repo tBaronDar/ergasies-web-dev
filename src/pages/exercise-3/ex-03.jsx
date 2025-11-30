@@ -1,8 +1,8 @@
 import gif from '@/assets/this-is-fine.gif';
 import video from '@/assets/taison.mp4';
-import styles from './ex-03b-start.module.css';
+import styles from './ask3.module.css';
 
-function Ex03bStartPage() {
+function Ex03Page() {
   return (
     <div className={styles.container}>
       <h1>Περισσότερα</h1>
@@ -33,4 +33,4 @@ function Ex03bStartPage() {
     </div>
   );
 }
-export default Ex03bStartPage;
+export default Ex03Page;
