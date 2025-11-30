@@ -20,6 +20,7 @@ export const createRouter = () => {
           path: 'landing',
           element: <LandingPage />,
         },
+        // proti ergasia
         {
           path: 'ex-03-start',
           element: <Ex03StartPage />,

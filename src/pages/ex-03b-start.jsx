@@ -1,5 +1,5 @@
 import gif from '@/assets/this-is-fine.gif';
-
+import video from '@/assets/taison.mp4';
 import styles from './ex-03b-start.module.css';
 
 function Ex03bStartPage() {
@@ -11,7 +11,11 @@ function Ex03bStartPage() {
         magna aliqua. <b>Ut enim ad minim veniam,</b> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat. Duis aute irur e dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
         pariatur. Excepteur sint occaecat cupidatat non proident, <i>sunt in culpa</i> qui officia deserunt mollit anim
-        id est laborum. Γυρίστε στην <a href='/ex-03-start'>προηγούμενη σελίδα</a>.
+        id est laborum. Γυρίστε στην{' '}
+        <a href='/ex-03-start' rel='noopener noreferrer'>
+          προηγούμενη σελίδα
+        </a>
+        .
       </p>
       {/* image */}
       <img src={gif} alt='some gif' />
@@ -23,7 +27,7 @@ function Ex03bStartPage() {
         <li>Αύριο</li>
       </ol>
       <hr />
-      {/* video */}
+      <video width='480' height='auto' controls preload='auto' loop autoPlay src={video} />
       <hr />
       <h5>ΠΑΜΑΚ - ΕΠΜΣ ΑΕΣΛ</h5>
     </div>
