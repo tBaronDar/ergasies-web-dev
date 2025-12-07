@@ -4,6 +4,7 @@ import Ex03StartPage from '@/pages/exercise-3/ex-03-start';
 import Ex03bPage from '@/pages/exercise-3/ex-03b';
 import Ex03bStartPage from '@/pages/exercise-3/ex-03b-start';
 import LandingPage from '@/pages/landing';
+import Ex05Page from '@/pages/exercise-5/ex-05';
 import Layout from '@/shared/layout';
 
 export const createRouter = () => {
@@ -39,6 +40,11 @@ export const createRouter = () => {
         {
           path: 'ex-03b',
           element: <Ex03bPage />,
+        },
+        //deuteri ergasia
+        {
+          path: 'ex-05',
+          element: <Ex05Page />,
         },
       ],
     },

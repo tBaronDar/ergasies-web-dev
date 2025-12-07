@@ -11,6 +11,9 @@ function LandingPage() {
       <Link component={'button'} to='/ex-03b-start'>
         Εργασία - 3η Άσκηση - 2ο σκέλος
       </Link>
+      <Link component={'button'} to='/ex-05'>
+        Εργασία - 5η Άσκηση
+      </Link>
       <a href='https://github.com/tBaronDar/ergasies-web-dev' target='_blank' rel='noopener noreferrer'>
         GitHub Repository
       </a>

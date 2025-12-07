@@ -15,7 +15,6 @@ function Ex03bPage() {
         <a href='/ex-03b-start' rel='noopener noreferrer'>
           προηγούμενη σελίδα
         </a>
-        .
       </p>
       {/* image */}
       <img src={gif} alt='some gif' />
