@@ -17,6 +17,9 @@ function LandingPage() {
       <a href='https://github.com/tBaronDar/ergasies-web-dev' target='_blank' rel='noopener noreferrer'>
         GitHub Repository
       </a>
+      <a href='https://ergasies-web-dev.vercel.app/landing' target='_blank' rel='noopener noreferrer'>
+        Deployed Application
+      </a>
     </div>
   );
 }
