@@ -24,6 +24,14 @@
   text-shadow: 0 0 10px hotpink;
   font-family: var(--neon-font);
 }
+.header h1 {
+  margin: 0;
+  padding-bottom: 14px;
+}
+
+.header button {
+  padding-bottom: 14px;
+}
 
 .main-container {
   display: flex;

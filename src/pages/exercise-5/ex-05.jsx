@@ -1,12 +1,15 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import SideForm from './components/side-form';
 import Globe from './components/globe';
 import TextSection from './components/text-section';
 import Footer from './components/footer';
+import audio from '@/assets/oMonosParadeisosPouYpirxePote.mp3';
 
 import styles from './ex-05.module.css';
 
 function Ex05Page() {
+  const audioRef = useRef(null);
   const [selectedDestination, setSelectedDestination] = useState(null);
   const [travelPlan, setTravelPlan] = useState(null);
   const [formData, setFormData] = useState({
@@ -26,6 +29,11 @@ function Ex05Page() {
       setValidationErrors([]);
     }
   };
+
+  useEffect(() => {
+    audioRef.current.muted = false;
+    audioRef.current.currentTime = 14;
+  }, []);
 
   const handleTravelPlanSubmit = (event) => {
     event.preventDefault();
@@ -75,6 +83,7 @@ function Ex05Page() {
   };
 
   console.log(travelPlan);
+  const navigate = useNavigate();
 
   return (
     <>
@@ -96,7 +105,14 @@ function Ex05Page() {
               <li>
                 <button onClick={() => handleDestinationClick('El Camundo')}>El Camundo</button>
               </li>
+              <button
+                onClick={() => {
+                  navigate(-1);
+                }}>
+                Go Back
+              </button>
             </ul>
+            <audio src={audio} loop preload='auto' controls ref={audioRef} muted autoPlay />
           </nav>
           <TextSection selectedDestination={selectedDestination} />
           <SideForm

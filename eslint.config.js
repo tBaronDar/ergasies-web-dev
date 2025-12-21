@@ -170,6 +170,7 @@ export default [
           extensions: ['.js', '.jsx'],
         },
       ],
+      'jsx-a11y/media-has-caption': ['off'],
       'react/react-in-jsx-scope': ['off'],
       'react/prop-types': ['off'],
       'react/require-default-props': ['off'],
