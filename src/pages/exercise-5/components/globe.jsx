@@ -8,13 +8,14 @@ function GlobeMesh({ selectedDestination }) {
   useFrame((state, delta) => {
     group.current.rotation.y += delta * 0.1;
     if (selectedDestination) {
-      if (group.current.position.x < 1) {
+      if (group.current.position.x < 1 && group.current.position.z < 1) {
         group.current.position.x += 0.5 * delta;
+        group.current.position.z += 0.8 * delta;
       }
     }
   });
   return (
-    <group position={[0, 0, -1]} ref={group}>
+    <group position={[0, 0, 0]} ref={group}>
       <mesh scale={1.001}>
         <icosahedronGeometry args={[2, 2, 2]} />
         <meshBasicMaterial color='white' wireframe />
@@ -33,7 +34,7 @@ export default function Globe({ selectedDestination }) {
       <Canvas
         camera={{ position: [0, 0, 3.2], near: 0.1, far: 10, fov: 90, aspect: window.innerWidth / window.innerHeight }}>
         <ambientLight intensity={0.05} />
-        <hemisphereLight color='#0099ff' groundColor='#aa5500' intensity={0.5} position={[0, 4, 2]} />
+        <hemisphereLight color='#0099ff' groundColor='#aa5500' intensity={0.5} position={[0, 5, 0]} />
         <GlobeMesh selectedDestination={selectedDestination} />
       </Canvas>
     </div>
