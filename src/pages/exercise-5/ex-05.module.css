@@ -56,13 +56,3 @@
 .destinationsList button {
   width: 100%;
 }
-
-.footer {
-  /* background-color: purple; */
-  background-color: transparent;
-
-  width: 100%;
-  height: 5vw;
-  position: relative;
-  z-index: 1;
-}
