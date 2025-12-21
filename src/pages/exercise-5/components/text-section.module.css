@@ -9,9 +9,15 @@
   font-size: 2rem;
   font-weight: 600;
   color: white;
+  text-shadow: 0 0 10px hotpink;
+  font-family: var(--neon-font);
 }
 
 .section p {
   max-width: 24rem;
   color: white;
+  font-size: 1.2rem;
+  text-shadow: 0 0 10px hotpink;
+  font-family: var(--neon-font);
+  line-height: 2;
 }

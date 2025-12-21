@@ -4,6 +4,8 @@
   background-color: transparent;
   padding: 2rem;
   color: white;
+  text-shadow: 0 0 10px hotpink;
+  font-family: var(--neon-font);
 }
 
 .form {

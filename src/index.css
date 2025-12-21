@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800&display=swap');
 /* ===== CSS Μεταβλητες ===== */
 :root {
   --main-font: 'Poppins', sans-serif;
+  --neon-font: 'Orbitron', sans-serif;
   --main-color: #e47a11;
   --secondary-color: #131517;
   --accent-color: #ece7e7;

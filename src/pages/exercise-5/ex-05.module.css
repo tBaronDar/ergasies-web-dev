@@ -5,6 +5,7 @@
   flex-direction: column;
   position: relative;
   /* overflow: hidden; */
+  font-family: var(--neon-font);
 }
 
 .header {
@@ -20,6 +21,8 @@
   font-size: 2rem;
   font-weight: 600;
   color: white;
+  text-shadow: 0 0 10px hotpink;
+  font-family: var(--neon-font);
 }
 
 .main-container {
@@ -35,12 +38,14 @@
   flex-basis: 20%;
   /* background-color: blue; */
   background-color: transparent;
+  text-shadow: 0 0 10px hotpink;
+  font-family: var(--neon-font);
 }
 .nav h2 {
   font-size: 1.5rem;
   font-weight: 600;
   color: white;
-  text-align: center;
+  padding-left: 2rem;
 }
 
 .destinationsList {

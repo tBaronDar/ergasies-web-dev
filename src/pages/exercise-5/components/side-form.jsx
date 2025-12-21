@@ -14,7 +14,7 @@ export default function SideForm(props) {
             <label htmlFor='email'>Email</label>
             <input type='email' id='email' name='email' value={formData.email} onChange={onChange} />
             <label htmlFor='message'>Message</label>
-            <textarea id='message' name='message' value={formData.message} onChange={onChange} rows={10} />
+            <textarea id='message' name='message' value={formData.message} onChange={onChange} rows={5} />
             <button type='submit'>Submit</button>
           </form>
         </>
