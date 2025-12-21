@@ -23,7 +23,7 @@ function GlobeMesh({ selectedDestination }) {
     }
   });
   return (
-    <group position={[0, 0, 1.1]} ref={group}>
+    <group position={[0, 0, 1.1]} rotation={[Math.PI / 4, 0, 0]} ref={group}>
       <mesh scale={1.001}>
         <icosahedronGeometry args={[2, 2, 2]} />
         <meshBasicMaterial color='white' wireframe />
@@ -41,8 +41,10 @@ export default function Globe({ selectedDestination }) {
     <div className={styles.canvas}>
       <Canvas
         camera={{ position: [0, 0, 3.2], near: 0.1, far: 10, fov: 90, aspect: window.innerWidth / window.innerHeight }}>
-        <ambientLight intensity={0.05} />
-        <hemisphereLight color='#0099ff' groundColor='#aa5500' intensity={0.5} position={[0, 5, 0]} />
+        <ambientLight intensity={0.1} />
+        {/* mia pigi hromatos apo pano mia apo kato */}
+        <directionalLight color='#0099ff' intensity={0.7} position={[0, 3, 1]} />
+        <directionalLight color='#bf0ecf' intensity={0.7} position={[0, -3, 1]} rotation={[Math.PI, 0, 0]} />
         <GlobeMesh selectedDestination={selectedDestination} />
       </Canvas>
     </div>
