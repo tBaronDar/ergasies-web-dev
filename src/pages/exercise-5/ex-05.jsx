@@ -59,6 +59,12 @@ function Ex05Page() {
       destination: selectedDestination,
       ...formData,
     });
+    setSelectedDestination(null);
+    setFormData({
+      name: '',
+      email: '',
+      message: '',
+    });
 
     setValidationErrors([]);
     setTravelPlan({ name: formData.name, email: formData.email, message: formData.message });
