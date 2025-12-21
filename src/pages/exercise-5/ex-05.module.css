@@ -3,12 +3,31 @@
   height: 100vh;
   width: 100vw;
   flex-direction: column;
+  position: relative;
+}
+
+.canvasContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 1920px;
+  z-index: 0;
 }
 
 .header {
-  background-color: red;
+  background-color: transparent;
+  /* background-color: red; */
   width: 100%;
   height: 10vw;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: 'magenta';
 }
 
 .main-container {
@@ -16,25 +35,34 @@
   flex-direction: row;
   width: 100%;
   height: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .nav {
   flex-basis: 20%;
-  background-color: blue;
+  /* background-color: blue; */
+  background-color: transparent;
 }
 
 .section {
   flex-basis: 60%;
-  background-color: green;
+  /* background-color: green; */
+  background-color: transparent;
 }
 
 .aside {
   flex-basis: 20%;
-  background-color: yellow;
+  /* background-color: yellow; */
+  background-color: transparent;
 }
 
 .footer {
-  background-color: purple;
+  /* background-color: purple; */
+  background-color: transparent;
+
   width: 100%;
   height: 5vw;
+  position: relative;
+  z-index: 1;
 }
