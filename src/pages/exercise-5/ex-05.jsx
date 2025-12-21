@@ -112,7 +112,7 @@ function Ex05Page() {
                 Go Back
               </button>
             </ul>
-            <audio src={audio} loop preload='auto' controls ref={audioRef} muted autoPlay />
+            <audio src={audio} loop preload='auto' ref={audioRef} muted autoPlay />
           </nav>
           <TextSection selectedDestination={selectedDestination} />
           <SideForm
