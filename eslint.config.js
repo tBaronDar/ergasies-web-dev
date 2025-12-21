@@ -33,6 +33,7 @@ export default [
       '**/node/',
       '**/jest.conf.js',
       '**/eslint.config.*',
+      'src/assets/icons/**',
     ],
   },
   ...fixupConfigRules(
@@ -65,7 +66,9 @@ export default [
         ...globals.jest,
         google: 'readonly',
       },
-      ecmaVersion: 6,
+      // Use a modern ecmaVersion so ESLint and import plugin can parse newer syntax
+      // used by dependencies like @reduxjs/toolkit.
+      ecmaVersion: 2022,
       sourceType: 'module',
       parserOptions: {
         ecmaFeatures: {
@@ -96,6 +99,7 @@ export default [
     },
 
     rules: {
+      'import/no-unresolved': [2, { ignore: ['.svg$'] }],
       semi: ['error', 'always'],
       quotes: [
         'error',
@@ -171,6 +175,7 @@ export default [
       'react/require-default-props': ['off'],
       'react/jsx-boolean-value': ['off'],
       'react/jsx-props-no-spreading': ['off'],
+      'react/no-unknown-property': ['off'],
       'react/jsx-key': ['error'],
       'react/function-component-definition': ['off'],
       'react/no-array-index-key': ['warn'],
@@ -211,8 +216,6 @@ export default [
           peerDependencies: true,
         },
       ],
-
-      'jsx-a11y/media-has-caption': ['off'],
     },
   },
   {
