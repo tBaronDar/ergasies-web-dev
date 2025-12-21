@@ -4,6 +4,7 @@
   width: 100vw;
   flex-direction: column;
   position: relative;
+  overflow: hidden;
 }
 
 .canvasContainer {
@@ -48,12 +49,6 @@
 .section {
   flex-basis: 60%;
   /* background-color: green; */
-  background-color: transparent;
-}
-
-.aside {
-  flex-basis: 20%;
-  /* background-color: yellow; */
   background-color: transparent;
 }
 
